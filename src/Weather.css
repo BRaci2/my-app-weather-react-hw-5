@@ -1,0 +1,43 @@
+.Weather {
+  background: pink;
+  border-radius: 10px;
+  box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
+  padding: 40px;
+  color: rgb(82, 76, 76);
+  margin-top: 10px;
+}
+
+.Weather .btn {
+  background: pink;
+  border: 1px solid rgb(82, 76, 76);
+}
+
+.Weather .search {
+  border: 1px solid rgb(82, 76, 76);
+}
+
+.Weather .search::placeholder {
+  color: pink;
+}
+
+.Weather h1 {
+  margin: 20px;
+}
+
+.Weather .WeatherForecast canvas {
+  display: block;
+  margin: 20px auto;
+}
+
+.WeatherForecast .max {
+  font-weight: 800;
+}
+
+.WeatherForecast .min {
+  font-weight: 600;
+}
+
+.WeatherForecastPreview canvas{
+  display: block;
+  margin:0 auto;
+}

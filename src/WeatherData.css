@@ -1,0 +1,28 @@
+.WeatherData h2 {
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 14px 0 0 0;
+}
+
+.WeatherData h3 {
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.WeatherData .temperature {
+  font-size: 60px;
+  font-weight: 800;
+  padding: 0 0 0 9px;
+}
+
+.WeatherData .unit {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 40px;
+  position: relative;
+  line-height: 1;
+  top: -20px;
+  padding: 2px;
+}

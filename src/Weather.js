@@ -40,22 +40,30 @@ export default function Weather(props) {
   if (weatherParameters.ready) {
     return (
       <div className="Weather">
+        <h1>Weather Search</h1>
         <form onSubmit={handleSubmit}>
-          <input
-            type="search"
-            placeholder="Enter city..."
-            className="form-input"
-            onChange={handleCityChange}
-          />
-          <input type="submit" value="Search" />
+          <div className="row">
+            <div className="col-10 p-0">
+              <input
+                type="search"
+                placeholder="Enter city..."
+                className="form-control search"
+                onChange={handleCityChange}
+              />
+            </div>
+            <div className="col-2 p-0">
+              <input type="submit" value="Search" className="btn btn-primary w-95" />
+            </div>
+          </div>
         </form>
+
         <WeatherData data={weatherParameters} />
-        <WeatherForecast coordinates={WeatherData.coordinates} />
+        <WeatherForecast coordinates={weatherParameters.coordinates} />
         <footer>This project was coded by Basia</footer>
       </div>
     );
   } else {
     search();
-    return "Loarding...";
+    return "Loading...";
   }
 }
